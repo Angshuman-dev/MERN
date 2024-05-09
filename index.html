@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .category,.items{
+            border: black solid 1px;
+            width: 40px;
+            height: 30px;
+        }
+       .search {
+            border: black solid 1px;
+            width: 400px;
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: 1px 2px 4px;
+       }
+       nav{
+        /* background-color: bisque; */
+        display: flex;
+        justify-content: space-between;
+       }
+       footer{
+        height: 20px;
+        background-color: black;
+        color: white;
+       }
+       .region{
+        background-color: darkgray;
+        height: 100px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+       }
+       .categories,.deals{
+            height: 200px;
+            background-color: darkgray;
+       }
+      
+        nav ul li {
+            display: inline-block;
+            /* text-decoration: none; */
+            border: 1px solid black;
+            border-radius: 20%;
+            padding: 5px 5px;
+        }
+        nav ul li a{
+            text-decoration: none;
+        }
+        nav ul li:hover{
+            background-color: yellow;
+        }
+        .search-div{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <nav>
+                <div id="logo">
+                    <img src="./logo.jpg" height="80px" width="100px" alt="logo">
+                </div>
+                <div class="search-div">
+                <input type="text" class="search" placeholder="Search"></input>
+                <a href="#"><img src="./search.svg" class="search-icon" height="40px" width="50px" alt=""></a>
+            </div>
+                <div class="navmenu">
+                <ul>
+                    <li class="login nav-item"><a href="#">Login</a> </li>
+                    <li class="cart nav-item"><a href="#">Cart</a> </li>
+                        
+
+                    </li>
+                </ul>
+                
+                </div>
+            </nav>
+            </div>
+        </header>
+        <main>
+            <div class="categories">
+             <div class="region">
+                <div class="category">Mobiles</div>
+                <div class="category">Fashion</div>
+                <div class="category">Electronics</div>
+                <div class="category">Home & Furniture</div>
+                
+            </div>
+            </div>
+            <div class="banners region">Banners
+                <div style="margin:auto;">adv. image</div>
+            </div>
+            
+            <div class="deals">
+                <h3>Top Deals for you</h3>
+               <div class="region">
+                <div class="items">IMG1</div>
+                <div class="items">IMG2</div>
+                <div class="items">IMG3</div>
+                <div class="items">IMG4</div>
+                </div>
+            </div>
+            <div class="links">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Security</a>
+            <a href="#">FAQ</a>
+            </div>
+        </main>
+        <footer>
+            &copy;2007-2024 abc.com
+        </footer>     
+    </div>
+</body>
+</html>
